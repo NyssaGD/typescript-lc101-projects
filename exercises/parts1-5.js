@@ -7,15 +7,9 @@ var kilometersToMars = 225000000;
 var kilometersToTheMoon = 384400;
 var milesPerKilometer = 0.621;
 // Part 2: Print Days to Mars
-function milesToMars(kilometersToMars, milesPerKilometer) {
-    return kilometersToMars * milesPerKilometer;
-}
-function hoursToMars(milesToMars, speedMph) {
-    return milesToMars / speedMph;
-}
-function daysToMars(hoursToMars) {
-    return hoursToMars / 24;
-}
+var milesToMars = kilometersToMars * milesPerKilometer;
+var hoursToMars = milesToMars / speedMph;
+var daysToMars = hoursToMars / 24;
 // Code an output statement here (use a template literal):
 console.log(spacecraftName + " would take " + daysToMars + " days to get to Mars.");
 // Part 3: Create a Function ("getDaysToLocation")

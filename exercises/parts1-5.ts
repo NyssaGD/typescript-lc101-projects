@@ -12,20 +12,14 @@ let milesPerKilometer: number = 0.621;
 
 
 // Part 2: Print Days to Mars
-function milesToMars(kilometersToMars: number, milesPerKilometer: number): number {
+ let milesToMars:number = kilometersToMars*milesPerKilometer;
 
-    return kilometersToMars*milesPerKilometer;
-}
 
-function hoursToMars(milesToMars: number, speedMph: number): number {
+let hoursToMars:number = milesToMars/speedMph;
 
-    return milesToMars/speedMph;
-}
 
-function daysToMars(hoursToMars: number): number {
+let daysToMars: number = hoursToMars/24;
 
-    return hoursToMars/24;
-}
 
 
 // Code an output statement here (use a template literal):
